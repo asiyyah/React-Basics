@@ -4,17 +4,15 @@ function ShoppingList(){
         "Bags",
         "Shorts",
         "T-shirts",
-        "Sneakers"
+        "Scarf"
     ]
 
     return(
         <>
-        <h1>Shopping List</h1>
-        <ul>
-            {shoppingList.map((item, index) => (
-                <li key={index}>{item}</li>
-            ))}
-        </ul>
+       
+        {shoppingList.map((item, index) => (
+            <h3 key={index}> {`Shopping item : ${item} and the key is ${index}`}</h3>
+        ))}
         </>
     )
 }
