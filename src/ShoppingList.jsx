@@ -1,3 +1,4 @@
+import Button from "./Button"
 function ShoppingList(){
     const shoppingList = [
         "Shoes",
@@ -13,6 +14,8 @@ function ShoppingList(){
         {shoppingList.map((item, index) => (
             <h3 key={index}> {`Shopping item : ${item} and the key is ${index}`}</h3>
         ))}
+
+<Button text="Add to Cart" />
         </>
     )
 }
