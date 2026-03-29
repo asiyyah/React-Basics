@@ -2,6 +2,7 @@
 // import InputComponent from "./InputComponent.jsx"
 import ShoppingList from "./ShoppingList.jsx"
 import Button from "./Button.jsx"
+import Conditional from "./Conditional.jsx"
 function App(){
   // A component can have dynamic data which is simply JavaScript variables
   return(
@@ -9,6 +10,7 @@ function App(){
  {/* <Counter />
  <InputComponent /> */}
  <ShoppingList />
+ <Conditional />
  {/* <Button /> */}
     </>
   )
