@@ -1,12 +1,13 @@
-import Counter from "./Counter.jsx"
-import InputComponent from "./InputComponent.jsx"
-
+// import Counter from "./Counter.jsx"
+// import InputComponent from "./InputComponent.jsx"
+import ShoppingList from "./ShoppingList.jsx"
 function App(){
   // A component can have dynamic data which is simply JavaScript variables
   return(
     <>
- <Counter />
- <InputComponent />
+ {/* <Counter />
+ <InputComponent /> */}
+ <ShoppingList />
     </>
   )
 }
