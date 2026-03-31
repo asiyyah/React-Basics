@@ -1,13 +1,19 @@
-// import Counter from "./Counter.jsx"
-// import InputComponent from "./InputComponent.jsx"
-// import ShoppingList from "./ShoppingList.jsx"
-// import Button from "./Button.jsx"
-import Conditional from "./Conditional.jsx"
+import Home from "./Home"
+import About from "./About"
+import Contact from "./Contact" 
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 function App(){
   // A component can have dynamic data which is simply JavaScript variables
   return(
     <>
- <Conditional />
+    <BrowserRouter>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </nav>
+    </BrowserRouter>
+    
     </>
   )
 }
