@@ -61,11 +61,12 @@ return (
 {resultAvailable ? (
     <>
     <h3>Your result is available</h3>
-    <p>Your score is: {score}</p>
+    <p>Your score is {score}</p>
     </>
 ) : (
     <>
     <h3>Result Not Available</h3>
+    <p>Please check back later</p>
     </>
 )}
 </>
