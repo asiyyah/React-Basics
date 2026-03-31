@@ -49,27 +49,39 @@ function Conditional(){
 //     </>
 // )
 
-const resultAvailable = true
-const studentName = `Rose`
-const score =250
+// const resultAvailable = true
+// const studentName = `Rose`
+// const score =250
 
-return (
-     <>
-<h1>Exam Result Portal</h1>
-<h3>Hello: {studentName}</h3>
+// return (
+//      <>
+// <h1>Exam Result Portal</h1>
+// <h3>Hello: {studentName}</h3>
 
-{resultAvailable ? (
+// {resultAvailable ? (
+//     <>
+//     <h3>Your result is available</h3>
+//     <p>Your score is {score}</p>
+//     </>
+// ) : (
+//     <>
+//     <h3>Result Not Available</h3>
+//     <p>Please check back later</p>
+//     </>
+// )}
+// </>
+// )
+
+const assignmentOverdue = true
+
+return(
     <>
-    <h3>Your result is available</h3>
-    <p>Your score is {score}</p>
+   <h3>Student Dashboard</h3>
+   <p>Welcome Back</p>
+   {assignmentOverdue && (
+    <p>Your assignment is overdue</p>
+   )}
     </>
-) : (
-    <>
-    <h3>Result Not Available</h3>
-    <p>Please check back later</p>
-    </>
-)}
-</>
 )
 }
 export default Conditional
