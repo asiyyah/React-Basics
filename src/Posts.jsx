@@ -5,15 +5,23 @@ function Posts(){
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
-        .then(data => setPosts(data))
+        .then((data) => {
+            setPosts(data)
+        })
     }, [])
+
+console.log(posts)
+
     return(
         <>
         <h1>Posts</h1>
         <ul>
             {posts.map(post => (
-                <li key={post.id}>{post.title}</li>
-            ))}
+                <div key={post.id}>
+                    <h2>{post.title}</h2>
+                    <p>{post.body}</p>  
+                </div>
+                ))}
         </ul>
         </>
     )
