@@ -68,3 +68,74 @@ button:focus-visible {
     color: #fff;
   }
 }
+
+/* Feed and Post Styles */
+.feed-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: var(--card-bg, #fff);
+  color: var(--card-text, #213547);
+}
+
+.post-user-info {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.post-title {
+  margin: 0 0 10px 0;
+}
+
+.post-body {
+  line-height: 1.6;
+}
+
+.post-comments-container {
+  margin-top: 20px;
+}
+
+.post-comments-title {
+  margin-bottom: 10px;
+}
+
+.post-comment {
+  background-color: var(--comment-bg, #f9f9f9);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.post-comment-author {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.post-comment-body {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-card {
+    --card-bg: #2a2a2a;
+    --card-text: rgba(255, 255, 255, 0.87);
+    border-color: #444;
+  }
+  .post-user-info {
+    border-color: #444;
+  }
+  .post-comment {
+    --comment-bg: #333;
+  }
+}
