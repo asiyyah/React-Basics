@@ -2,6 +2,7 @@ import Home from "./Home"
 import About from "./About"
 import Contact from "./Contact" 
 import Posts from "./Posts"
+import Weather from "./Weather"
 
 function App(){
   // A component can have dynamic data which is simply JavaScript variables
@@ -9,7 +10,9 @@ function App(){
     <>
     
 
-   <Posts />
+   <Weather />
+
+
     
     </>
   )
